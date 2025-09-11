@@ -1,61 +1,68 @@
-body{
+body {
     font-family: 'comic sans ms', sans-serif;
     line-height: 1.4;
     margin: 0;
     padding: 0;
-    background-color: #5C4033;
+    background-color: #A67B5B;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #B7C68B;
+    color: #4E342E;
+    padding: 30px;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
 }
 h2{
-    margin: 20px;
+    margin: 50px;
     text-align: center;
     font: 1em comic sans ms;
-    font-size: 35px;
-
+    font-size: 45px;
+    color: #fff;
 }
 
-.left-center {
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;      /* Vertically center the boxes */
+    justify-content: flex-start;
+    gap: 100px;
+    margin-top: 100px;         /* Remove fixed margin-top */
+    margin-bottom: 0;      /* Add auto margin-bottom for vertical centering */
+    margin-left: 100px;
+}
+
+.left-center, .center, .right-center {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-height: 70vh;
-    margin-left: 40px;
-    width: 600px;
+    min-height: 50px;
+    width: 700px;
+    background-color: #F5E9DA;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 32px;
+    box-sizing: border-box;
+    margin-bottom: 30px;         /* Space below each box */
 }
 
-img {
-    width: 600px;     
-    height: auto;    
+.blog-image {
+    width: 100%;
+    height: 393.75px; /* or use height: auto; for natural aspect ratio */
+    object-fit: cover;
     border-radius: 8px;
     display: block;
+    box-sizing: border-box;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     margin: 10px 0 0 0;
-    width: 100%;
+    width: 670px;
     box-sizing: border-box;
 }
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    min-height: 70vh;
-    margin-left: 40px;
-    width: 600px;
-}
-
-.center p {
-  text-align: center;
-  margin: 0;
-  max-width: 100%; /* ensures text wraps within container */
-}
+/* ...existing code... */
