@@ -48,7 +48,7 @@ h2 {
     padding: 32px;
     box-sizing: border-box;
     margin-bottom: 30px;
-    transition: transform 0.15s;
+    transition: transform 0.3s;
 }
 
 .blog-image {
@@ -66,7 +66,11 @@ p {
     box-sizing: border-box;
 }
 
-.box-link {
+.box-link{
     text-decoration: none;
     color: inherit;
+}
+
+.blog-description:hover {
+    text-decoration: underline;
 }
