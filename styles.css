@@ -24,13 +24,22 @@ h2 {
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
-    gap: 125px;
     margin-top: 200px;
     margin-bottom: 100px;
     margin-left: 100px;
-    margin-right: 100px;
+}
+
+.left-center,
+.center,
+.right-center {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.left-center,
+.center {
+    margin-right: 120px;
 }
 
 .left-center:hover,
@@ -66,7 +75,7 @@ p {
     box-sizing: border-box;
 }
 
-.box-link{
+.box-link {
     text-decoration: none;
     color: inherit;
 }
