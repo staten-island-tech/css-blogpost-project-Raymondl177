@@ -33,6 +33,12 @@ h2 {
     margin-right: 100px;
 }
 
+.left-center:hover,
+.center:hover,
+.right-center:hover {
+    transform: scale(1.1);
+}
+
 .left-center,
 .center,
 .right-center {
@@ -42,6 +48,7 @@ h2 {
     padding: 32px;
     box-sizing: border-box;
     margin-bottom: 30px;
+    transition: transform 0.15s;
 }
 
 .blog-image {
@@ -57,5 +64,9 @@ p {
     font-size: 40px;
     margin: 10px 0 0 0;
     box-sizing: border-box;
-    
+}
+
+.box-link {
+    text-decoration: none;
+    color: inherit;
 }
